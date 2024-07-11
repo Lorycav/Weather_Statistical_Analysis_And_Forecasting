@@ -1,0 +1,9 @@
+model {
+    tau <- 1 / sigma^2
+    for (i in 1:length(x_fit)) {
+        MED_mean[i] ~ dnorm(a, tau)
+    }
+    #priors
+    a ~ dnorm(12.5, 1e-1)
+    sigma ~ dexp(0.0001)
+}
