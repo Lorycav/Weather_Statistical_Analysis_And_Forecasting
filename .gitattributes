@@ -1,0 +1,2 @@
+*.jags linguist-language=JAGS
+*.ipynb linguist-language=Python
