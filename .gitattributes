@@ -1,2 +1,2 @@
 *.jags linguist-language=JAGS
-*.ipynb linguist-language=Python
+*.ipynb linguist-language=R
