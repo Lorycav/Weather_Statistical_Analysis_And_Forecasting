@@ -1,9 +1,19 @@
 model {
-    tau <- 1 / sigma^2
+
+    tau_min <- 1 / sigma_min^2
+    tau_max <- 1 / sigma_max^2
+    tau_ava <- 1 / sigma_ava^2
+
     for (i in 1:length(x_fit)) {
-        MED_mean[i] ~ dnorm(a, tau)
+        MAX_mean[i] ~ dnorm(a_max, tau_max) 
+        MIN_mean[i] ~ dnorm(a_min, tau_min) 
+        MED_mean[i] ~ dnorm(a_ava, tau_ava) 
     }
     #priors
-    a ~ dnorm(12.5, 1e-1)
-    sigma ~ dexp(0.0001)
+    a_min ~ dnorm(12, 1e-1)
+    sigma_min ~ dexp(0.0001)
+    a_max ~ dnorm(12, 1e-1)
+    sigma_max ~ dexp(0.0001)
+    a_ava ~ dnorm(12, 1e-1)
+    sigma_ava ~ dexp(0.0001)
 }
