@@ -6,7 +6,7 @@
 
 
 <div align="center">
- <img src="./Plots/forecasting.png" alt="Forecasting Model" width="600"><img src="./Plots/distribution.png" alt="Constant Model Posterior" width="600">
+ <img src="./Plots/forecasting.png" alt="Forecasting Model" width="800"><img src="./Plots/distribution.png" alt="Constant Model Posterior" width="800">
 </div>
 
 
