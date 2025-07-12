@@ -26,7 +26,7 @@ This project applies Bayesian statistical analysis on ARPAV weather data using R
 
 1. **Bayesian Analysis**: Utilizes JAGS for MCMC simulation and for regression models on weather data.
 <div align="center">
- <img src="./Plots/markov.png" alt="Linear Model Posterior" width="400"><img src="./Plots/regression.png" alt="Linear Model Posterior" width="500">
+ <img src="./Plots/markov.png" alt="Linear Model Posterior" width="800"><img src="./Plots/regression.png" alt="Linear Model Posterior" width="800">
 </div>
 
 2. **Time Series Forecasting**: Uses the `forecast` package in R for ARIMA-based weather forecasting.
